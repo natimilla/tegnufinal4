@@ -1,0 +1,1122 @@
+:root{
+    --black-color:#101920;
+    --yellow-color:#ffe71f;
+    --white-color:#fcf6ff;
+}
+body{
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+#checkboxicon{
+    display: none;
+}
+#checkbox{
+    display: none;
+}
+nav #logo{
+    width: 60px;
+    height: 60px;
+    margin: 0.5% 0 1% 1%;
+    border-radius: 60px;
+    border:1px solid var(--yellow-color);
+}
+nav#nav{
+    position:absolute;
+    right:0;
+    left:0;
+    top:0;
+    display: flex;
+    height:75px;
+    background-color: #101920;
+    border:none;
+    z-index:1;
+}
+nav #navh{
+    flex:3;
+    font-size: 50px;    
+    border:none;
+    padding: 5px;
+    padding-left:1%;
+    color:#fcf6ff;
+}
+nav #navlist{
+position:relative;
+bottom: 5px;
+  flex:3;
+  border:none;
+  width:100px;
+}
+nav #navlist li{
+    list-style-type:none;
+    display: inline;
+    float:right;
+    border:none;
+    margin:10px;
+    font-size: 22px;
+    padding-right:5%;
+    color: #fcf6ff;
+    cursor: pointer;
+}
+nav #navlist li:hover{
+    color:var(--yellow-color);
+}
+nav #navlist li:active{
+    color:#fcf6ff;   
+}
+main{
+    position:absolute;
+    top:75px;
+    left:0;
+    right:0;
+    height:100%;
+    margin:0px;
+    border:1px solid black;
+    background-image: url("https://natimilla.github.io/oldcar/oldcar.jpg");
+    background-size: cover;
+    background-position: center;
+}
+main #mainh{
+    display:block;
+    color:white;
+    text-align: center;
+    font-weight:bold;
+    font-size: 50px;
+    margin-bottom:2px;
+    border:none;
+    font-family:Arial, Helvetica, sans-serif;
+   
+}
+main #mainh #color{
+    color:#ffe71f;
+}
+main #mainp{
+    position:relative;
+    bottom:15px;
+    display:block;
+    color:white;
+    text-align: center;
+    font-weight:normal;
+    font-size: 30px;
+    border:none;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+main #mainp #flag{
+    position: relative;
+    top:3px;
+    height:30px;
+    width: 30px;
+    border-radius:50px;
+    
+}
+div#position{
+    position: relative;
+    top:210px;
+}
+div form{
+    position:relative;
+    bottom:30px;
+   text-align: center;
+   border:none;
+   height:50px;
+  
+}
+div form #formtype{
+    height:51px;
+    width:300px;
+    color:#101920;
+    font-size:15px;
+    cursor:pointer;
+    font-family:Arial, Helvetica, sans-serif;
+    overflow-y: scroll;
+   
+}
+div form #formtype:hover{
+    border:2px solid #ffe71f;
+}
+div form #formvalue:hover{
+    border:2px solid #ffe71f;
+}
+div form #formvalue{
+    height:51px;
+    width:300px;
+    color:#101920;
+    font-size:15px;
+    cursor:pointer;
+    font-family:Arial, Helvetica, sans-serif;
+    overflow-y: scroll;
+    
+}
+div form button{
+    position:relative;
+    top:2px;
+    height:51px;
+    width: 48px;
+    background-color:var(--black-color);
+    cursor:pointer;
+}
+div form button #searchbar{
+    font-size:20px;
+    color:var(--white-color);
+}
+div form button:hover {
+   background-color:var(--yellow-color);
+}
+#featuredhead{
+    position:absolute;
+    top:650px;
+    right:0px;
+    left:0px;
+    height: 50px;
+    padding:5px;
+    font-size:42px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color:var(--white-color);
+    border:none;
+    background-color: var(--black-color);
+    text-align: center;
+    text-shadow:0px 0px 3px var(--yellow-color);
+}
+#carscollection{
+    position: absolute;
+    top:710px;
+    right:0px;
+    left:0px;
+    background-color: var(--black-color); 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    margin-bottom:20px;
+}
+#carscollection .img{
+    width: 500px;
+    height:300px;
+    border-radius:40px 40px 0px 0px;
+    transition: transform 0.5s ease-in ;
+}
+#carscollection #car{
+ margin:20px 10px;
+ border:none;
+ border-radius: 40px;
+ display: block;
+ background-image: url("https://natimilla.github.io/fordescription/fordescription.jpg");
+ background-position:bottom right;
+ cursor: pointer;
+ overflow: hidden;
+}
+#carscollection #car:hover{
+    box-shadow:0px 0px 25px var(--yellow-color);
+}
+ #carscollection .img:hover{
+    transform:scale(1.06);
+}
+div#images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#carscollection .img2{
+    display: none;
+    width: 300px;
+    height:240px;
+    border-radius:25px 25px 10px 10px;
+    padding:10px;
+    transition:transform 1s ease;
+}
+#carscollection .img2:hover{
+    transform:scale(1.04);
+}
+#carscollection #car #description{
+    position: relative;
+    top:7px;
+    color:var(--white-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    margin: 5px;
+    text-align:center;
+}
+#carscollection #car #description #ul{
+    list-style-position: inside;
+    text-align: center;
+    list-style-type:disc;
+    padding-left: 0;
+    display:flex;
+    padding: 20px;
+}
+#carscollection #car #description #ul li{
+    display:block;
+    text-shadow: 0px 0px 2px var(--black-color);
+    margin:2px;
+    color:var(--white-color);
+    border-right:0.2px solid var(--yellow-color);
+    padding:17px 2px;
+}
+#carscollection #car .model{
+    display: block;
+    height:18px;
+    padding: 0px;
+    border: 1px solid none;
+}
+#carscollection #car #price{
+    display: block;
+    height:18px;
+    padding: 0px;
+    border: 1px solid none;
+}
+#carscollection #car #year{
+    display: block;
+    height:18px;
+    padding: 0px;
+    border: 1px solid none;
+}
+div#about{
+    position:absolute;
+    display:block;
+    top:583%;
+    left:0;
+    right: 0;
+    height:100%;
+    border:none;
+    background-image: url("https://natimilla.github.io/oldcar/oldcar.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: #1a2935;
+}
+#aboutus{
+    display: block;
+    text-align:center;
+    height:50px;
+    border:none;
+    color:var(--yellow-color);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+#aboutp{
+    position: relative;
+    left:5px;
+    margin-top:50px;
+    color:var(--yellow-color);
+    font-size:18px;
+    display:block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#aboutp2{
+    position: relative;
+    left:5px;
+    margin-top:22px;
+    color:var(--yellow-color);
+    font-size:18px;
+    display:block;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+div#contact{
+    position:absolute;
+    top:683%;
+    display: flex;
+    border:none;
+    left:0;
+    right:0;
+    height:651px;
+    background-color: var(--black-color);
+}
+#messagehead{
+    display:block;
+    margin-top:5px;
+    border:none;
+    text-align: center;
+    background-color: transparent;
+    color:var(--yellow-color);
+    font-size: 28px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#label{
+    font-size: 22px;
+    color: var(--yellow-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#messageform{
+    display:block;
+    width: 400px;
+    height:440px;
+    margin-left: auto;
+    margin-right: 40px;
+    background-color: var(--black-color);
+   margin-top:100px;
+    border:1px solid black;
+    flex:0.6;   
+    box-shadow: 1px 1px 1px rgb(167, 165, 165);
+    border-radius:1px;
+}
+
+#labelinput{
+    margin-top:15px;
+    margin-bottom:15px;
+}
+#name{
+    color:var(--yellow-color);
+    background-color: var(--black-color);
+}
+#dm{
+    height: 100px;
+    background-color: var(--black-color);
+    color:var(--yellow-color);
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+#last{
+    color:var(--yellow-color);
+    background-color: var(--black-color);
+}
+#number{
+    color:var(--yellow-color);
+    background-color: var(--black-color);
+}
+#warning{
+    color:red;
+}
+#submit{
+    margin:15px;
+    font-size: 22px;
+    color:var(--yellow-color);
+    background-color: var(--black-color);
+    cursor:pointer;
+}
+#contacth{
+    margin:40px;
+    flex:1;
+   
+}
+#contacth #get{
+    display: block;
+    color:var(--yellow-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight:bold;
+    margin-bottom:0px;
+}
+#horizontal{
+    border:2px solid var(--yellow-color)
+}
+#phone{
+    display: block;
+    text-decoration: none;
+    color:var(--yellow-color);
+    margin-top:20px;
+    font-size: 20px;
+    margin-bottom:0px;
+}
+#email{
+    display: block;
+    text-decoration: none;
+    color:var(--yellow-color);
+    margin-top:10px;
+    font-size: 20px;
+    margin-bottom:0px;
+}
+#location{
+    display: block;
+    text-decoration: none;
+    color:var(--yellow-color);
+    margin-top:10px;
+    font-size: 20px;
+    margin-bottom:0px;
+}
+footer{
+    position:absolute;
+    top:783%;
+    left:0;
+    right:0;
+    border:none;
+    background-color: #1a2935;
+    background-image: url("https://natimilla.github.io/oldcar/oldcar.jpg");
+    background-attachment:scroll;
+    background-position: center;
+    background-size: cover;
+}
+#footerimg{
+    display: block;
+    width:300px;
+    height:300px;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20px;
+    margin-bottom:10px;
+    border-radius: 300px;
+    box-shadow:0px 0px 50px var(--yellow-color);
+    animation-name:image;
+    animation-duration:10s;
+    animation-iteration-count:infinite;
+    animation-delay:0s;
+    animation-timing-function: linear;
+  }
+   @keyframes image{
+    0%{rotate:0deg;}
+    100%{rotate:360deg;}
+   }
+#footericons{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+}
+#footericon{
+    position: relative;
+    left:10px;
+    text-decoration: none;
+    font-size:50px;
+    color:var(--yellow-color);
+    margin-right:20px;
+    transition: transform 0.5s ease-in;
+}
+#footericon:hover{
+    transform: scale(1.2);
+}
+#copyright{
+    display: block;
+    text-align: center;
+    margin-top:60px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color:var(--yellow-color);
+}
+#copyright a{
+  text-decoration: none;
+}
+@media screen and (min-width:1358px) and (min-height:625px){
+     div#contact{
+        top:4258px;
+     }
+     footer{
+        
+        top:4907px;
+     }
+     div#about{
+        top:3610px;
+     }
+}
+@media screen and (max-width:1357px) {
+    div#about{
+        top: 3610px;
+    }
+    div#contact{
+        position:absolute;
+        top:4220px;
+        
+        }
+    footer{
+        position:absolute;
+       top:4869px;
+    }
+
+}
+@media screen and (max-width:1357px) and (max-height:600px){
+    #featuredhead{
+        top:115%;
+    }
+    #carscollection{
+        top:125%;
+    }
+    div#about{
+     top: 3529px;
+}
+div#contact{
+    position:absolute;
+    top:4000px;
+    
+}
+footer{
+    position:absolute;
+   top:4650px;
+}   
+}
+@media screen and (max-width:1217px){
+    nav #navh{
+        position:relative;
+        top:5px;
+        font-size: 40px;
+    }
+    nav #navlist li{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:1050px){
+    div#about{
+        top: 6510px;
+    }   
+    div#contact{
+        top: 7120px;
+    }
+    footer{
+       top:7769px;
+    }
+}
+@media screen and (max-width:997px){
+    nav #navh{
+        position:relative;
+        top:8px;
+        font-size: 35px;
+    }
+    nav #logo{
+        width: 60px;
+        height: 60px;
+    }
+}
+@media screen and (max-width:979px){
+    #copyright{
+        font-size: 20px;
+    }   
+}
+@media screen and (max-width:930px){
+    main #mainh{
+        font-size: 40px;
+    }
+    main #mainp{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:884px){
+    nav #navh{
+        position:relative;
+        top:10px;
+        font-size: 30px;
+    }
+    nav #logo{
+        position:relative;
+        top:8px;
+        width: 55px;
+        height: 55px;
+    }
+}
+@media screen and (max-width:890px){
+    #messageform{
+        height: 450px;
+    }
+    #submit{
+        margin: 8px;
+    }
+}
+@media screen and (min-width:769px){
+    nav #navlist{
+        display: inline;
+    }   
+}
+@media screen and (max-width:768px){
+    nav #navh{
+        flex: 5;
+    }
+    nav #navlist{
+        position:absolute;
+        top: 58px;
+        right:100%;
+        width:100%;
+        transition: right 1s ease;
+        background-color:#1a2935;
+        height: 150px;
+        text-align: center;
+        z-index: 1;
+    }
+   
+    nav #navlist li{
+       margin-left: auto;
+       margin-right: auto;
+       text-align: center;
+        display:block;
+        width:100%;
+        border:none;
+    }
+    #checkboxicon{
+        display: inline;
+        color:var(--white-color);
+        background-color: var(--black-color);
+        font-size: 28px;
+        float:right;
+        margin:20px;
+        cursor: pointer;
+    }
+    #checkboxicon:hover{
+        color:var(--yellow-color);
+    }
+   
+    #checkbox:checked ~ #navlist{
+        right:0;
+        transition: right 1s ease-out;
+     }
+     #checkbox:not(:checked) ~ #navlist {
+         right: 100%;
+         transition: right 1s ease-out;
+     }
+}
+@media screen and (max-width:752px){
+    main #mainh{
+        font-size: 30px;
+    }
+    main #mainp{
+        font-size: 18px;
+    }
+    #copyright{
+        font-size:18px;
+    }
+    #aboutus{
+        font-size: 40px;
+    }
+    #aboutp{
+        font-size: 15px;
+    }
+    #aboutp2{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:675px){
+    main #mainh{
+        position:relative;
+        bottom: 35px;
+    }
+    main #mainp{
+        position:relative;
+        bottom: 40px;
+        font-size: 20px;
+    }
+    main #mainp #flag{
+        width:20px;
+        height:20px;
+    }
+    div form button #searchbar{
+        display: block;
+        font-size:25px;
+    }
+    div form #button{
+        position:absolute;
+        top:70px;
+        left:0;
+        right:0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height:41px;
+        width:250px;
+       
+    }
+    div form #formvalue{
+        position:relative;
+        bottom: 20px;
+        display: block;
+        margin-left:auto;
+        margin-right:auto;
+        height:41px;
+        width:250px;
+    }
+    div form #formtype{
+        position:relative;
+        bottom: 25px;
+        display: block;
+        margin-left:auto;
+        margin-right:auto;
+        height:41px;
+        width:250px;
+    }
+}
+@media screen and (max-width:566px){
+    main #mainh{
+        font-size:25px
+    }
+    main #mainp{
+        position: relative;
+        bottom: 50px;
+        font-size: 18px;
+    }
+    div form #button{
+        position:absolute;
+        top:50px;
+        height:31px;
+        width:220px;
+    }
+    div form #formtype{
+        height:31px;
+        width:220px;
+    }
+    div form #formvalue{
+        height:31px;
+        width:220px;
+    }
+    #messageform{
+        height: 480px;
+    }
+}
+/*@media screen and (max-width:566px) and (max-height:620px){
+    div#about{
+        top:583%;
+    }
+    footer{
+        top:780%;
+    }
+    div#contact{
+        top:680%;
+    }
+    #carcollection{
+        top:120%;
+    }
+}*/
+@media screen and (min-device-width:1560px){
+   div#about{
+    top: 2644px;
+   }
+   div#contact{
+    top: 3254px;
+   
+   }
+   footer{
+    top: 3903px;
+   }
+}
+@media screen and (max-device-width:500px){
+   body{
+    overflow-x: hidden;
+   }
+    nav#nav{
+        height: 140px;
+        z-index: 1;
+    }    
+    nav #navh{
+        position:relative;
+        top: 28px;
+        right:60px;
+        font-size: 52px;
+        padding:5px;
+        margin-left:25px;
+        text-align: center;
+      
+    }
+    nav #logo{
+        margin: 30px 20px 30px 30px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50px;
+        border:none;
+      
+    }
+    nav #navlist{
+        position:absolute;
+        top: 118px;
+        right:100%;
+        transition:right 1s ease-in;
+        background-color:#1a2935;
+        height: 380px;
+        text-align: center;
+        z-index: 1;
+        width: 95.8%;
+        flex:5;
+    }
+   
+    nav #navlist li{
+        display:block; 
+        padding: 20px;
+       font-size: 50px;
+       margin-left: auto;
+       margin-right: auto;
+       width:100%;
+       text-align: center;
+       border:none;
+       
+    }
+    #checkboxicon{
+       
+        font-size: 48px;
+            display: inline;
+            color:var(--white-color);
+            float:right;
+            margin-right:30px;
+            cursor: pointer;
+            padding:40px;
+            flex:1;
+    }
+    
+    #checkbox:checked ~ #navlist{
+       right:0;
+       transition: right 1s ease-out;
+    }
+    #checkbox:not(:checked) ~ #navlist {
+        right: 100%;
+        transition: right 1s ease-out;
+    }
+    main{
+       
+        border:none;
+        height: 100%;
+       
+    }
+    main #mainh{
+        position:relative;
+        top: 350px;
+        font-size: 80px;
+    }
+    main #mainp{
+        position:relative;
+        top: 340px;
+        font-size: 50px;
+    }
+    div form #button{
+        position:absolute;
+        top:570px;
+        right:0;
+        left:0;
+        height:81px;
+        width:420px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    div form #formtype{
+        display: block;
+        position:relative;
+        top: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        height:81px;
+        width:420px;
+        font-size: 40px;
+    }
+    div form #formvalue{
+        display: block;
+        position:relative;
+        margin-left: auto;
+        margin-right: auto;
+        top: 380px;
+        height:81px;
+        width:420px;
+        font-size: 40px;
+    }
+    #op{
+        font-size:10px;
+    }
+    div form button #searchbar{
+        font-size: 50px;
+    }
+    main #mainp #flag{
+        width:50px;
+        height: 50px;
+    }
+    #featuredhead{
+        top:103.3%;
+        font-size:80px;
+        height:5%;
+
+    }
+    #carscollection{
+       top: 107.5%;
+       height:497%;
+    }
+    #carscollection .img{
+        width: 800px;
+        height:500px;
+    }
+    #carscollection #car #description{
+        font-size: 37px;
+        font-weight: lighter;
+    }
+    div#about{
+        
+        top:603.9%;
+          height: 100%;
+       }
+       #aboutus{
+        font-size: 80px;
+        margin-top: 30px;
+        margin-bottom: 100px;
+       }
+       #aboutp{
+        font-size: 35px;
+        margin-right: 20px;
+        margin-left:20px;
+        margin-bottom:80px;
+       font-family: Arial, Helvetica, sans-serif;   
+    }
+       #aboutp2{
+        font-size: 35px;
+        margin-right: 20px;
+        margin-left:20px;
+       }
+       div#contact{
+          display: block;
+          top: 702.2%;
+          height:100%; 
+       }
+       #contacth{
+        margin-top: 120px;
+        display: block;
+        margin-bottom:15%;
+       }
+       #contacth #get{
+        font-size:81px;
+       }
+       #horizontal{
+        border:5px solid var(--yellow-color);
+       }
+       #phone{
+        font-size:50px;
+       }
+       #email{
+        font-size:50px;
+       }
+       #location{
+        font-size: 50px;
+       }
+       #messageform{
+        width: 850px;
+        height: 57%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+       }
+       #messagehead{
+        font-size: 60px;
+        margin-top: 30px;
+       }
+       #label{
+        font-size:50px;
+        margin-bottom: 20px;
+       }
+       #labelinput{
+        margin-top: 60px;
+       }
+       #name{
+        width:400px;
+        height:60px;
+        font-size: 50px;
+       }
+       #last{
+        width:400px;
+        height:60px;
+        font-size: 50px;
+       }
+       #number{
+        width:400px;
+        height:60px;
+        font-size: 50px;
+       }
+       #dm{
+        width:400px;
+        height:240px;
+        font-size: 50px;
+        margin-bottom: 50px;
+       }
+       #submit{
+        position: relative;
+        bottom:10px;
+        width:250px;
+        height:80px;
+        font-size: 50px;
+       }
+       footer{
+         top:802.1%;
+       }
+       #warning{
+        font-size: 40px;
+       }
+       #footerimg{
+        width: 500px;
+        height:500px;
+        border-radius: 500px;
+        box-shadow:0px 0px 100px var(--yellow-color);
+       }
+       #footericon{
+        font-size: 80px;
+        margin: 20px;
+       }
+       #copyright{
+        font-size: 33px;
+       }
+}   @media screen and (max-device-height:739px) and (min-device-height:660px) {
+    main #mainh{
+        position:relative;
+        top:200px;
+        
+    }
+    main #mainp{
+        position:relative;
+        top:210px;  
+    }
+    div form #button{
+        position:absolute;
+        top:410px;
+    }
+    div form #formtype{
+        display: block;
+        position:relative;
+        top: 200px;
+    }div form #formvalue{
+        display: block;
+        position:relative;
+        top: 220px;
+    }
+    div#about{
+       
+        top:788%;
+    }
+    #carscollection{
+        top: 108.5%;
+        height:680%;
+     }
+    div#contact{
+        
+        top:888%;
+    }
+
+     footer{
+        top:988%;
+       }
+} 
+ @media screen and (min-device-width:2080px){
+    div#about{
+        top:191%;
+    }
+ }
+ @media screen and (max-device-height:600px){
+    main #mainh{
+        position:relative;
+        top:200px;
+    }
+    main #mainp{
+        position:relative;
+        top:210px;  
+    }
+    div form #button{
+        position:absolute;
+        top:410px;
+    }
+    div form #formtype{
+        display: block;
+        position:relative;
+        top: 200px;
+    }div form #formvalue{
+        display: block;
+        position:relative;
+        top: 220px;
+    }
+    div#about{
+       
+        top:788%;
+    }
+    #carscollection{
+        top: 108.5%;
+        height:680%;
+     }
+    div#contact{
+        top:888%;
+        height:120%;
+    }
+
+     footer{
+        top:1008%;
+       }
+       #copyright{
+        font-size:40px;
+        
+       }
+ }

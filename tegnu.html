@@ -1,0 +1,226 @@
+<html>
+    <head>
+        <meta name="view-port" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-examplehash" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+        <link rel="stylesheet" href="tegnu.css">
+        <script src="tegnu.js"></script>
+        <title>Tegnu General Car Market</title>
+        </head>
+        <body>
+<nav  id="nav">
+    <img src="https://natimilla.github.io/tegnu/photo_2023-08-30_21-31-29.jpg" id="logo"><h id="navh"> Tegnu General Car Market</h>
+    <input type="checkbox" id="checkbox"> 
+    <label for="checkbox"><i class="fa fa-bars" id="checkboxicon" onclick="display()"></i></label>
+    <ul id="navlist">
+        <li onclick="contact()">CONTACT</li>
+        <li onclick="about()">ABOUT</li>
+        <li onclick="home()">HOME</li>   
+      </ul>
+    </nav>
+    <main>
+        <div id="position">
+        <h id="mainh">Your <span id="color">Destination</span> For <span id="color">Exceptional</span> Cars</h>
+        <p id="mainp">Ethipoian Biggest Car Market <img src="https://natimilla.github.io/falg/falg.png" id="flag"><p>
+        <form>
+            <select id="formtype" onchange="cartype()">
+                <option id="op" value-"" hidden selected>Make</option>         
+                <option id="op" value="toyota">TOYOTA</option>
+                <option id="op" value="suzuki">SUZUKI</option>
+                <option id="op"value="nissan">NISSAN</option>
+                <option id="op" value="hyundai">Hyundai</option>
+                </select>
+            <select id="formvalue">
+                <option id="op" value="" selected hidden>Model</option>
+                <option id="op"value="raize" >Raize</option>
+                <option id="op" value="vitz">Vitz</option>
+                <option id="op" value="compact">Compact</option>
+                <option id="op" value="spresso">Spresso</option>
+                <option id="op" value="dzire">Dzire</option>
+                <option id="op" value="swift">Swift</option>
+                <option id="op" value="kicks">Kicks</option>
+                <option id="op" value="juke">Juke</option>
+                <option id="op" value="qashqai">Qashqai</option>
+                <option id="op" value="grandi10">Grand i10</option>
+                <option id="op" value="tucson">Tucson</option>
+                <option id="op" value="creta">Creta</option>
+                </select>
+                <button type="button" id="button" onclick="match()"><i class="fa fa-search" aria-hidden="true" id="searchbar"></i>
+                </button>     
+            </form>    
+            </div>
+        </main>
+        <div id="featuredhead"><h>Featured cars</h></div>
+       <div id="altogether">
+        <div id="carscollection">
+         <div id="car"  ><div id="raizecollection">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx8vtxqm4FcCizTxvepFvDe_BPXAjcIeMuUA&usqp=CAU" alt="no image" id="raizeimg" class="img" onclick="changeimg()" title="click to change image" >
+            <br></div>
+            <div id="description"  onclick="description1()">
+                <h id="raize" class="model">Model: Toyota Raize</h><br>
+                <h id="year">Year:2002</h><br>
+                <h id="price">price:1,500,000 birr</h><br>
+               <span id="feature"> Features</span><i class="fas fa-chevron-down slide-arrow" id="downarrow"></i><br>
+            </div>
+            </div>    
+            <div id="car" >
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpR14tfCIuS6h0nCorgQHAU7_KvfKp_I1w_A&usqp=CAU" alt="no image" id="vitzimg" class="img" onclick="changeimg2()" title="clcick to change image"><br>
+                <div id="description"  onclick="description2()">
+                    <h id="vitz" class="model">Model: Toyota Vitz</h><br>
+                    <h id="year">Year:2002</h><br>
+                    <h id="price">price:1,500,000 birr</h><br>
+                    <span> Features</span><i class="fas fa-chevron-down slide-arrow"  id="downarrow2"></i><br>
+                    
+                </div>
+                </div>    
+                <div id="car" >
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRSPWRPPo_KSwQYKur_87O-BKnXfLYLuUtug&usqp=CAU" alt="no image" id="compactimg" class="img" onclick="changeimg3()" title="click to change image"><br>
+                    <div id="description" onclick="description3()">
+                        <h id="compact" class="model">Model: Toyota Compact</h><br>
+                        <h id="year">Year:2002</h><br>
+                        <h id="price">price:1,500,000 birr</h><br>
+                        <span> Features</span><i class="fas fa-chevron-down slide-arrow"  id="downarrow3"></i><br>
+                       
+                    </div>
+                    </div>    
+                    <div id="car" >
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcO0rk4059TznTDlCB3z61tfP-V8_8MDYCiA&usqp=CAU" alt="no image" id="dzireimg" class="img" onclick="changeimg4()" title="click to change image"><br>
+                        <div id="description" onclick="description4()">
+                            <h id="dzire" class="model">Model: Szukui Dzire</h><br>
+                            <h id="year">Year:2002</h><br>
+                            <h id="price">price:1,500,000 birr</h><br>
+                            <span id="feature"> Features<i class="fas fa-chevron-down slide-arrow"  id="downarrow4"></i></span><br>
+                           
+                        </div>
+                        </div>    
+                        <div id="car">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD6sRHYOaAAZ3Kp6lwxwIW5Oiup-EsbgoHig&usqp=CAU" alt="no image" id="spressoimg" class="img" onclick="changeimg5()" title="click to change image"><br>
+                            <div id="description" onclick="description5()">
+                                <h id="spresso" class="model">Model: Suzuki Spresso</h><br>
+                                <h id="year">Year:2002</h><br>
+                                <h id="price">price:1,500,000 birr</h><br>
+                                <span> Features</span><i class="fas fa-chevron-down slide-arrow"  id="downarrow5"></i><br>
+                               
+                            </div>
+                            </div>    
+                            <div id="car" >
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQntOQjPCfCnuCTlYdog7-BKHOeAoEt4zVxdA&usqp=CAU" alt="no image" id="swiftimg" class="img" onclick="changeimg6()" title="click to change image"><br>
+                                <div id="description" onclick="description6()">
+                                    <h id="swift" class="model">Model: Suzuki Swift</h><br>
+                                    <h id="year">Year:2002</h><br>
+                                    <h id="price">price:1,500,000 birr</h><br>
+                                    <span> Features</span><i class="fas fa-chevron-down slide-arrow"  id="downarrow6"></i><br>
+                                   
+                                </div>
+                                </div>    
+                                <div id="car" >
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVBqO-eAM1elLCGsToh44pTDuqeal-24spYQ&usqp=CAU" alt="no image" id="kicksimg" class="img" onclick="changeimg7()" title="click to change image"><br>
+                                    <div id="description" onclick="description7()">
+                                        <h id="kicks" class="model">Model: NIssan kicks</h><br>
+                                        <h id="year">Year:2002</h><br>
+                                        <h id="price">price:1,500,000 birr</h><br>
+                                        <span> Features</span><i class="fas fa-chevron-down slide-arrow"  id="downarrow7"></i><br>
+                                       
+                                    </div>
+                                    </div>    
+                                    <div id="car" >
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTodZDFuC19AxPvx3xXQwoN5WEb8qURVeskOQ&usqp=CAU" alt="no image" id="jukeimg" class="img" onclick="changeimg8()" title="click to chnage image"><br>
+                                        <div id="description" onclick="description8()">
+                                            <h id="juke" class="model">Model: Nissan juke</h><br>
+                                            <h id="year">Year:2002</h><br>
+                                            <h id="price">price:1,500,000 birr</h><br>
+                                            <span> Features</span><i class="fas fa-chevron-down slide-arrow"  id="downarrow8"></i><br>
+                                          
+                                        </div>
+                                        </div> 
+                                        <div id="car" >
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO0sry_2mDq1aAon4MN2MH8Qa9G87fO3Tmzw&usqp=CAU" alt="no image" id="qashqaiimg" class="img" onclick="changeimg9()" title="click to change image"><br>
+                                            <div id="description" onclick="description9()">
+                                                <h id="qashqai" class="model">Model: Nissan Qashqai</h><br>
+                                                <h id="year">Year:2002</h><br>
+                                                <h id="price">price:1,500,000 birr</h><br>
+                                                <span> Features</span><i class="fas fa-chevron-down slide-arrow"  id="downarrow9"></i><br>
+                                               
+                                            </div>
+                                            </div>    
+                                            <div id="car" >
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRGo1fygnHxdqQhYuDcVO8otYpR6mFXKOnUg&usqp=CAU" alt="no image" id="tucsonimg" class="img" onclick="changeimg10()" title="click to change image"><br>
+                                                <div id="description" onclick="description10()">
+                                                    <h id="tucson" class="model">Model: Hyundai Tucson</h><br>
+                                                    <h id="year">Year:2002</h><br>
+                                                    <h id="price">price:1,500,000 birr</h><br>
+                                                    <span> Features</span><i class="fas fa-chevron-down slide-arrow"  id="downarrow10" class="img"></i><br>
+                                                   
+                                                </div>
+                                                </div>    
+                                                <div id="car">
+                                                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnj9ekoL_JvCgUoxfCklwnotc1_YS-IUZKWlCRtyYY8Lu37oB1" alt="no image" id="grandi10img" class="img" onclick="changeimg11()" title="click to change image"><br>
+                                                    <div id="description" onclick="description11()">
+                                                        <h id="grandi10" class="model">Model: Hyundai Grand i10</h><br>
+                                                        <h id="year">Year:2002</h><br>
+                                                        <h id="price">price:1,500,000 birr</h><br>
+                                                        <span> Features</span><i class="fas fa-chevron-down slide-arrow"  id="downarrow11"></i><br>
+                                                       
+                                                    </div>
+                                                    </div>    
+                                                    <div id="car" >
+                                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX2E_mpgYMi-iSuguWXK83O-dqwwR5zV5WGA&usqp=CAU" alt="no image" id="cretaimg" class="img" onclick="changeimg12()" title="click to change image"><br>
+                                                        <div id="description" onclick="description12()">
+                                                            <h id="creta" class="model">Model: Hyundai creta</h><br>
+                                                            <h id="year">Year:2002</h><br>
+                                                            <h id="price">price:1,500,000 birr</h><br>
+                                                            <span> Features</span><i class="fas fa-chevron-down slide-arrow"  id="downarrow12"></i><br>
+                                                           
+                                                        </div>
+                                                        </div>    
+                                                                                                                                                                                                                                                                                                               
+        </div>
+        <div id="about">
+            <h id="aboutus">About us</h>
+            <p id="aboutp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut elementum tortor. Duis vel gravida orci. Integer vehicula non ligula sed ullamcorper. Mauris vel molestie magna. Quisque finibus ante quam, ac accumsan magna sollicitudin quis. Suspendisse et risus placerat odio convallis elementum. Sed a risus id ipsum semper tincidunt. Curabitur erat lectus, semper nec gravida aliquet, facilisis vel lacus. Proin ac consequat erat. Donec tincidunt commodo nisl fringilla suscipit. Nullam interdum lectus vel elementum vestibulum. Duis auctor in ex vitae accumsan. Cras dignissim et lacus at tempus. Etiam eget tempor neque. Nunc quis turpis in nisl suscipit euismod. Suspendisse vitae rutrum quam, nec rutrum arcu.
+
+            </p> <br><p id="aboutp2">Nulla condimentum porta arcu in mollis. Mauris sed dui consequat, euismod elit eget, convallis quam. Duis ante est, faucibus at placerat vel, pretium ut arcu. Sed pharetra condimentum lacus in varius. Ut ullamcorper ex sit amet risus accumsan consequat. Sed tempor quam lorem, et tempor erat semper a. Nullam sagittis elit eget viverra tristique. Praesent convallis diam orci, eget molestie risus efficitur a. Ut finibus mi at ligula imperdiet, quis lobortis leo faucibus.</p>
+        </div>
+        <div id="contact">
+           <div id="contacth"><h id="get"> Get in touch</h><hr  id="horizontal" widt="200px"><br>
+            <a id="phone" href="tel:+251 12345678"><i class="fas fa-phone"></i> +251 12345678</a><br>
+            <a id="email" href="mailto:@example.com"><i class="fas fa-envelope"></i> @example.com</a><br>
+           <a id="location" href=""> <i class="fas fa-map-marker-alt"></i> Addis Ababa,Ethiopia</a>
+           </div>  
+               <form name="myform" onsubmit="check()" id="messageform">
+                <h id="messagehead">Send Message</h><br>
+                <div id="labelinput">
+                <label for="name" id="label">First Name:</label>
+                <input type="text" id="name" placeholder="john" required name="name"><br>
+                </div>
+                <div id="labelinput">
+                <label for="last" id="label" name="last">Last Name:</label>
+                <input type="text" id="last" placeholder="Doe"><br>
+                </div>
+                 <div id="labelinput">
+                <label for="number" id="label" >Phone Number:</label>
+                <input type="tel" id="number" name="number" placeholder="0912345687" required><br>
+                <span id="warning" style="display: none;"> &ast;Invalid Input</span>
+                </div>
+                <div id="labelinput">
+                <label for="dm" id="label">Message:</label>
+                <input type="text" id="dm"><br>
+                </div>
+                <input type="submit" id="submit" value="submit">
+                </form>
+                
+            </div>
+        <footer id="footer">
+            <img src="https://natimilla.github.io/tegnu/photo_2023-08-30_21-31-29.jpg" id="footerimg" ><br>
+           <div id="footericons">
+            <a href="" target="_blank" id="footericon"><i  class="fab fa-telegram"></i></a>
+            <a href="" target="_blank"id="footericon"><i class="fab fa-facebook icon"></i></a>
+            <a href="" target="_blank" id="footericon"><i class="fab fa-instagram icon"></i></a>
+            <a href="" target="_blank" id="footericon"><i class="fab fa-tiktok icon"></i></a><br>
+            </div>
+            <h id="copyright" ><i class="fas fa-copyright" ></i>coprirght all reserved 2023|| Tegnu Car Market || Powered by <a href="https://t.me/NatiMilla" target="_blank">Nati Milla</h>
+            </footer>
+            </div>
+        </body>
+        </html>
